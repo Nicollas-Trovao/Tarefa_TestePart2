@@ -36,9 +36,9 @@ public class ContratoServiceTeste {
 	
 	@Test 
 	public void atualizarTeste() {
-		IContratoDAO EDAO = new ContratoDAOMock();
-		IContratoService Bserv = new ContratoService(EDAO);
-		String retorno = EDAO.buscar();
+		IContratoDAO ADAO = new ContratoDAOMock();
+		IContratoService Aserv = new ContratoService(ADAO);
+		String retorno = ADAO.buscar();
 		Assert.assertEquals("atualizado", retorno);
 	}
 		
