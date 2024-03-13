@@ -35,7 +35,7 @@ public class ContratoServiceTeste {
 	}
 	
 	@Test 
-	public void AtualizarTeste() {
+	public void atualizarTeste() {
 		IContratoDAO EDAO = new ContratoDAOMock();
 		IContratoService Bserv = new ContratoService(EDAO);
 		String retorno = EDAO.buscar();
